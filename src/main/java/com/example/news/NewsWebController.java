@@ -33,7 +33,7 @@ public class NewsWebController {
             File dest = new File(fdir+"/"+file.getOriginalFilename());
 
             file.transferTo(dest);
-            news.setImg(dest.getName());
+            news.setImg("/img/"+dest.getName());
             dao.addNews(news);
         } catch (Exception e){
             e.printStackTrace();
