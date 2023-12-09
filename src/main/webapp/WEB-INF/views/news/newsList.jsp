@@ -43,19 +43,19 @@
             뉴스 등록
         </button>
         <div class="collapse" id="addForm">
+            <div class="card card-body">
+                <form method="post" action="/news/add"
+                      enctype="multipart/form-data">
+                    <label class="form-label">제목</label>
+                    <input type="text" name="title" class="form-control">
+                    <label class="form-label">이미지</label>
+                    <input type="file" name="file" class="form-control">
+                    <label class="form-label">기사내용</label>
+                    <textarea cols="50" rows="5" name="content" class="form-control"></textarea>
+                    <button type="submit" class="btn btn-success mt-3">저장</button>
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="card card-body">
-        <form method="post" action="/news/add"
-              enctype="multipart/form-data">
-            <label class="form-label">제목</label>
-            <input type="text" name="title" class="form-control">
-            <label class="form-label">이미지</label>
-            <input type="file" name="file" class="form-control">
-            <label class="form-label">기사내용</label>
-            <textarea cols="50" rows="5" name="content" class="form-control"></textarea>
-            <button type="submit" class="btn btn-success mt-3">저장</button>
-        </form>
     </div>
 </body>
 </html>
