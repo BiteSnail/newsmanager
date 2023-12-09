@@ -1,9 +1,12 @@
 package com.example.news;
 
+import org.springframework.stereotype.Component;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class NewsDAO {
     final String JDBC_DRIVER = "org.h2.Driver";
     final String JDBC_URL = "jdbc:h2:tcp://localhost/~/jwbookdb";
